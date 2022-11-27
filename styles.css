@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  width: 70%;
+  height: 60%;
+  grid-auto-columns: 1fr;
+  gap: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.box,
+.box2 {
+  height: 12em;
+  border: 3px solid black;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.box:nth-child(1) {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 3em;
+}
+.box:nth-child(2) {
+  background-image: url("https://eltierrero.com/wp-content/uploads/2020/03/chihuahua_00000.jpg");
+  background-size: 100%;
+  background-position: 10% 42%;
+  grid-row: 1;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.box2:nth-child(1) {
+  background-image: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.box2:nth-child(2) {
+  background-image: url("https://misanimales.com/wp-content/uploads/2016/10/chihuahuas.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.box2:nth-child(3) {
+  height: auto;
+  background-image: url("https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=776,fit=contain/article/images/ES%20PHOTOS/OCTUBRE2020/chihuahua-cara-agresiva.jpg");
+  background-position: 40% 12%;
+  grid-row: 1/3;
+  grid-column: 3/5;
+}
+
+.box2:nth-child(4) {
+  background-image: url("https://www.canal13sanjuan.com/u/fotografias/m/2021/11/23/f720x404-246942_288514_5050.jpg");
+  background-size: cover;
+  background-position: 80% 12%;
+  grid-column: 5/-1;
+  grid-row: 1;
+}
+
+.box2:nth-child(5) {
+  background-image: url("https://i.ytimg.com/vi/eWC3AvrRL0I/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 32%;
+  grid-column: 1/3;
+
+  grid-row: 2;
+}
+.box2:nth-child(6) {
+  background-image: url("http://pm1.narvii.com/8287/5b7fad6080585f585b082041aba35bc7207fee27r1-236-295v2_00.jpg");
+  background-size: cover;
+  background-position: 10% 32%;
+
+  background-repeat: no-repeat;
+  grid-column: 5/-1;
+
+  /* grid-row: 3; */
+}
+.box2:nth-child(7) {
+  background-image: url("https://demascotas.info/wp-content/uploads/2020/12/a1a4ed84-6b41-465c-9000-aedf6bd12933-209x300.jpg");
+  background-position: 10% 12%;
+  grid-column: 1/2;
+  /* grid-row: 4; */
+}
+.box2:nth-child(8) {
+  background-image: url("https://i.pinimg.com/originals/44/3f/85/443f8551d214ef19f21469819b69c140.jpg");
+  background-position: 10% 12%;
+  background-size: cover;
+  grid-column: 2/3;
+  /* grid-row: 4; */
+}
+.box2:nth-child(9) {
+  background-image: url("https://img.freepik.com/fotos-premium/hermoso-perro-disfrazado-vampiro-oscuro-bosque-iluminado-luna-lindo-cachorro-staffordshire-terrier-disfraz-halloween-vampiro-aterrador-bosque-filmado-clave-baja_145134-1227.jpg");
+  background-position: 10% 38%;
+  grid-column: 3/6;
+  /* grid-row: 4; */
+}
