@@ -1,5 +1,5 @@
 # Cabramelizada
-Este proyecto ha sido creado para rendir homenaje a uno de los mayores placeres culinarios que existen, la pizza cabramelizada. &#x1f355;
+Exercise Css Grid
 
 ## Prototipo
 ![image](https://user-images.githubusercontent.com/116892825/204160232-31170274-70e8-484a-b2c9-6cb3017474f2.png)
